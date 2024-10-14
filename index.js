@@ -14,7 +14,7 @@ const authRoutes = require('./SRC/Route/userRoute');
 
 //Initialize the express app
 const app = express();
-
+const PORT = process.env.PORT || 3000;
 //MongoDb Atlas connection string
 const mongoURI = 'mongodb+srv://Kanchan:Kanchan@cluster0.v3lhx.mongodb.net/';
 
@@ -45,8 +45,7 @@ app.use(
 app.use('/api/',routes);
 app.use('/api/user', authRoutes);
 
-// Define the port for the server
-const PORT = process.env.PORT || 3000;
+
 
 // Start the server and listen on the defined port
 app.listen(PORT, ()=>{
