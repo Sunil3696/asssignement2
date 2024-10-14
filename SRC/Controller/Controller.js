@@ -4,7 +4,7 @@
  * Student ID: 200603165
  * Date: 13-10-24
  */
-const recipes = require ('../Models/Recipe');
+const recipes = require ('../Models/recipe');
 
 const getRecipe = async (req, res) => {
     try {
