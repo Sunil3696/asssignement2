@@ -46,7 +46,7 @@ app.use('/api/',routes);
 app.use('/api/user', authRoutes);
 
 // Define the port for the server
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Start the server and listen on the defined port
 app.listen(port, ()=>{
